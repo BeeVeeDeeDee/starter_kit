@@ -1,7 +1,18 @@
 // list of all .scss files 
+// all files compiled to css using koala
+// dev -> line comments/compact -> css/styles.dev.css
+// dist -> compressed -> css/styles.min.css
+
+// Reset styling inconsistencies across browsers
 
 @import '/scss/base/reset'; // http://meyerweb.com/eric/tools/css/reset/  
+@import '/scss/base/form-reset'; 
 
-// variables & mixins
-@import '/scss/base/mixins/grid';
+// BASE styles - level 0 style assets
 
+@import 'scss/base/typo'; // variables set first & cascade per sheet
+@import 'scss/base/brandcolors';
+@import 'scss/base/form-elements';
+
+// Component styles - level 1 style assets 
+@import '/regions/header/menu/menu.scss'; // all menu component styles 
