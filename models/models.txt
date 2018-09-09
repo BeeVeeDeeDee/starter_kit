@@ -1,0 +1,1 @@
+Everything that is business logic belongs in a model, whether it is a database query, calculations, a REST call, etc.
